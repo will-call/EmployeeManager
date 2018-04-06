@@ -75,7 +75,7 @@
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/101010?id=butt&name=stes&phone=1234567890&email=test&title=test",
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/101010?name=stes&phone=1234567890&email=test&title=test",
 					"protocol": "https",
 					"host": [
 						"peaceful-inlet-88854",
@@ -88,10 +88,6 @@
 						"101010"
 					],
 					"query": [
-						{
-							"key": "id",
-							"value": "butt"
-						},
 						{
 							"key": "name",
 							"value": "stes"
