@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "f34e987d-0023-4669-8c56-8efac5a22d91",
+		"name": "EmployeeManager",
+		"description": "API Testing for the Employee Manager App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 9999,\n    \"name\": \"The End\",\n\t\"phone\": \"9999999999\",\n    \"email\": \"The End of Times\",\n\t\"title\": \"Bringer of Death\"\n}"
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				},
+				"description": "GET Test"
+			},
+			"response": []
+		},
+		{
+			"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 101010,\n    \"name\": \"test\",\n    \"phone\": \"0123456789\",\n    \"email\": \"test\",\n\t\"title\": \"test\"\n}"
+				},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				},
+				"description": "POST Test"
+			},
+			"response": []
+		},
+		{
+			"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees/101010?id=butt&name=stes&phone=1234567890&email=test&title=test",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/101010?id=butt&name=stes&phone=1234567890&email=test&title=test",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						"101010"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "butt"
+						},
+						{
+							"key": "name",
+							"value": "stes"
+						},
+						{
+							"key": "phone",
+							"value": "1234567890"
+						},
+						{
+							"key": "email",
+							"value": "test"
+						},
+						{
+							"key": "title",
+							"value": "test"
+						}
+					]
+				},
+				"description": "PUT Test\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees/101010",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/101010",
+					"protocol": "https",
+					"host": [
+						"peaceful-inlet-88854",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"employees",
+						"101010"
+					]
+				},
+				"description": "DELETE Test"
+			},
+			"response": []
+		}
+	]
+}
